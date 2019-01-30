@@ -6,7 +6,7 @@ class SecretsController< ApplicationController
 
 private
 def require_login
-  redirect_to controller: 'sessions', action: 'new' unless session.include? :user_id
+  redirect_to controller: 'sessions', action: 'new' unless session.include? :name
 end
 
 end
