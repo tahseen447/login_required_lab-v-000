@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     session[:user_id] = params[:user_id]
   end
 
-  def destroy:
+  def destroy
     session.delete :user_id
   end
 
